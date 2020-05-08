@@ -242,8 +242,6 @@ let customers = [
 ];
 
 const emails = [];
-customers.forEach(customer =>
-  emails.push(customer.contacts.email.forEach(email =>
-    emails.push(email))));
+customers.forEach(customer => customer.contacts.email.forEach(email => emails.push(email)));
 
-console.log(emails)
+
